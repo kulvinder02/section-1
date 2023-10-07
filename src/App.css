@@ -13,6 +13,10 @@
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -32,7 +36,275 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+.container {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+}
+.col-6 {
+  width: 50%;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.card1 {
+  padding: 14px;
+  border-radius: 10px;
+  background: #F3F5F6;
+  box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.00);
+  transition: all 200ms ease-in-out;
+}
+.card1:hover{
+    transform: scale(1.02);
+}
+
+.card-para {
+  margin-top: 22px;
+  text-align: start;
+  color: #232323;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.dolr-text {
+  margin-bottom: -15px;
+  color: #9E3040;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.dolr-text2 {
+  margin-bottom: -15px;
+  color: #686868;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: line-through;
+}
+
+.card-bttn {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 14px;
+  padding-top: 14px;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 5px;
+  background: #232323;
+  border: none;
+  transition: all 300ms ease-in-out;
+}
+
+.card-bttn:hover {
+  cursor: pointer;
+  background: #9E3040;
+}
+
+.align-item-center {
+  align-items: center;
+}
+
+.justify-btween {
+  justify-content: space-between;
+}
+
+.mt-row {
+  margin-top: 10px;
+}
+
+p {
+  margin-top: unset;
+}
+
+.card-small-section {
+  margin-bottom: 15px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.card-img {
+  margin-top: 5px;
+}
+
+.mt-card {
+  margin-top: 30px;
+}
+
+.img-possition {
+  position: relative;
+}
+
+.img-text {
+  top:18%;
+  position: absolute;
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 117.1%;
+}
+
+.section-heading {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #232323;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.section-bttn {
+  transition: all 300ms ease-in-out;
+  margin-top: 90px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
+  border: none;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 5px;
+  background: #9E3040;
+  box-shadow: 0px 0px 10px 0px rgba(158, 48, 64, 0.17);
+}
+.section-bttn:hover{
+  cursor: pointer;
+  background: #000;
+}
+.justify-cont-center{
+  justify-content: center;
+}
+.mb-section{
+  margin-bottom: 50px;
+}  
+@media(min-width:320px) {
+  .img-text {
+    font-size: 33px;
+  }
+.section-bttn {
+  margin-top: 40px;
+}
+  .mt-sm{
+    margin-top: 20px;
+  }
+  .dolr-text {
+    font-size: 16px;
+}
+  .card-bttn {
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    font-size: 15px;
+}
+  .img2{
+    max-width:100%;
+    height: 190px;
+  }
+  .col-12{
+    width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}
+@media (min-width:576px) {
+  .img2{
+    max-width:100%;
+    height: 230px;
+  }
+  .img-text {
+    font-size: 43px;
+  }
+}
+@media (min-width:768px) {
+  .mt-sm{
+    margin-top: unset;
+  }
+  .img-text {
+    font-size: 58px;
+  }
+   .big-img{
+    width: 80%;
+  }
+.dolr-text {
+  font-size: 24px;
+}
+.card-bttn {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 14px;
+  padding-top: 14px;
+  color: #FFF;
+  font-size: 16px;
+}
+  .col-sm-6 {
+    width: 50%;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}
+@media(min-width:992px) {
+  .big-img{
+   height: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width:1200px) {
+  .big-img{
+    width: 100%;
+  }
+  .section-bttn {
+    margin-top: 90px;
+  }
+  .img2{
+    max-width:100%;
+    height: 190px;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+  
+  .col-lg-5 {
+    width: 41.66%;
+    padding-right: 12px;
+    padding-left: 12px;
   }
 }
